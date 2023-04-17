@@ -1,15 +1,3 @@
-# LAB - Class 06
-
-## Project: Ten_thousand_Game
-
-## Author: Abdulkareem Abunabhan and Rakan al-madani
-
-## Links and Resources
-
-[Game rules](https://en.wikipedia.org/wiki/Dice_10000)
-
-## Setup
-
 asttokens==2.2.1
 attrs==22.2.0
 backcall==0.2.0
@@ -46,11 +34,3 @@ tomli==2.0.1
 tornado==6.2
 traitlets==5.9.0
 wcwidth==0.2.6
-
-## How to use your library (where applicable)
-
-after installing pytest we need to import it in test file and just write pytest in terminal
-
-## How do you run tests?
-
-pytest
