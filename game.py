@@ -35,7 +35,7 @@ def start_game(round_num=1, total=0, number_dices=6, round_score=0):
         return
     if dice_picked == "":
         round_score = 0
-        bank_points(round_score, round_num, total)
+        end_game(total)
     var =dice_picked.replace(" ","")   
     kept_dices = tuple(int(x) for x in var)
     if not validate_keepers(first_roll,kept_dices):
@@ -47,7 +47,8 @@ def start_game(round_num=1, total=0, number_dices=6, round_score=0):
         hot_dice(round_score,round_num,total,number_dices)
         return
     elif remaining_dices == 0:
-        bank_points(round_score,round_num,total)
+        number_dices=6
+        hot_dice(round_score,round_num,total,number_dices)
         return
     print(f"You have {round_score} unbanked points and {remaining_dices} dice remaining")
     print(f"(r)oll again, (b)ank your points or (q)uit:")
