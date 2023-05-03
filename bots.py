@@ -158,15 +158,10 @@ class ReasonabelKid(BaseBot):
         else:
             return "b"
 
-    def _enter_dice(self):
-        """simulate user entering which dice to keep.
-        Defaults to all scoring dice"""
-
-        return super()._enter_dice()
 
 
 if __name__ == "__main__":
-    num_games = 5
+    num_games = 100
     NervousNellie.play(num_games)
     RiskTakerKareem.play(num_games)
     ReasonabelKid.play(num_games)
